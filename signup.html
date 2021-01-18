@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sign up</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style>
+      body{
+          background-color:rbg(245,245,245);
+      }
+      .container{
+       box-shadow: 0px 5px 10px 1px;
+        width: 30%;
+
+        padding: 10px 50px 50px 50px;
+        border-radius: 20px;
+        margin-top:10px;
+      }
+      h2{
+          margin-bottom: 30px;
+      }
+    
+  </style>
+</head>
+<body>
+
+  <div class="container">
+  <h2 class="text-center">SIGN-UP</h2>
+
+    <form method="POST" action="./php/query.php">
+        <div class="form-group">
+            <label for="fname">First Name:</label>
+            
+            <input type="text" class="form-control" id="fname" name="fname" requried>
+        </div>
+        <div class="form-group">
+            <label for="lname">Last Name:</label>
+            <input type="text" class="form-control" id="lname"  name="lname" >
+        </div>
+        <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" requried>
+        </div>
+        <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd"  name="pwd" requried>
+        </div>
+        <div class="form-group">
+            <label for="dob">DOB:</label>
+            <input type="date" class="form-control" id="dob"  name="dob">
+        </div>
+        <div class="form-group">
+            <label for="country">Country:</label>
+            <input type="text" class="form-control" id="country" name="country">
+        </div>
+        <div class="form-group">
+            <label for="contact">Contact:</label>
+            <input type="tel" class="form-control" id="contact"  name="contact">
+        </div>
+        <button type="submit"  name="signup" class="btn btn-default">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
